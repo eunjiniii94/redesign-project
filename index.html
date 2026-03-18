@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-
+<link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
   </head>
@@ -18,20 +18,27 @@
     <div class="wrap">
         <!-- 헤더 섹션 -->
          <header class="header">
-        <div class="inner">
+     
+          <!-- logo -->
+           <div class="inner">
           <div class="logo">
             <a href="index.html">
               <img src="assets/logo.png" alt="로고" />
             </a>
-            <nav class="menu"></nav>
+              </div>
+              <!-- menu -->
+            <nav>
                 <ul class="menu-list">
       <li>사업소개</li>
       <li>이용안내</li>
       <li>K-패스카드</li>
-      <li>공지사항</li>
+      <li><a href="#notice">공지사항</a></li>
       <li>문의하기</li>
     </ul>
+    </nav>
     </div>
+  
+<!-- login -->
     <div class="user-menu">
       <button class="login">로그인</button>
       <button class="signup">회원가입</button>
@@ -47,11 +54,31 @@
             <div class="swiper hero-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                      <hr href="#">
+                      <a href="#">
                     <img
                       src="assets/images/slide1.png"
                       alt="배너-1">
                       
+                      
+                    </a>
+                    </div>
+                     <div class="swiper-slide">
+                      <a href="#">
+                    <img
+                      src="assets/images/slide2.png"
+                      alt="배너-2">
+                    
+                    </a>
+                      
+                      </div>
+                     <div class="swiper-slide">
+                      <a href="#">
+                    <img
+                      src="assets/images/slide3.png"
+                      alt="배너-3">
+                      
+                    
+                    </a>
                       </div>
                       </div>
                       </div>
@@ -173,8 +200,7 @@
 <button>더보기</button>
 
 </div>
-
-<div class="notice">
+<section id="notice" class="notice-section">
 
 <h3>공지사항</h3>
 
@@ -187,7 +213,7 @@
 <button>더보기</button>
 
 </div>
-  </div>
+ </section>
 
 
 
@@ -240,7 +266,9 @@
 
 </footer>
                     
-                
+         <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>        
   </body>
 </html>
 <!-- 라이브러리 연결 

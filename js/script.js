@@ -1,7 +1,7 @@
-const swiper = new Swiper(".hero-swiper", {
-  loop: true,
+// const swiper = new swiper(".hero-swiper", {
+//   loop: true,
 
-  autoplay: {
-    delay: 3000,
-  },
-});
+//   autoplay: {
+//     delay: 3000,
+//   },
+// });
