@@ -29,19 +29,19 @@
               <!-- menu -->
             <nav>
                 <ul class="menu-list">
-      <li>사업소개</li>
-      <li>이용안내</li>
-      <li>K-패스카드</li>
+      <li><a href="#"></a>사업소개</li>
+      <li><a href="#"></a>이용안내</li>
+      <li><a href="#"></a>K-패스카드</li>
       <li><a href="#notice">공지사항</a></li>
-      <li>문의하기</li>
+      <li><a href="#"></a>문의하기</li>
     </ul>
     </nav>
     </div>
   
 <!-- login -->
-    <div class="user-menu">
-      <button class="login">로그인</button>
-      <button class="signup">회원가입</button>
+    <div class="user-buttons">
+      <a href="/login.html" class="btn btn-outline">로그인</a>
+              <a href="#" class="btn btn-primary">회원가입</a>
     </div>
   </div>
   </header>
@@ -51,13 +51,13 @@
       <main class="main">
         <!-- hero-section -->
           <!-- Swiper -->
-            <div class="swiper hero-swiper">
+            <div class=" hero-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                       <a href="#">
                     <img
                       src="assets/images/slide1.png"
-                      alt="배너-1">
+                      alt="banner-1">
                       
                       
                     </a>
@@ -66,7 +66,7 @@
                       <a href="#">
                     <img
                       src="assets/images/slide2.png"
-                      alt="배너-2">
+                      alt="banner-2">
                     
                     </a>
                       
@@ -75,13 +75,17 @@
                       <a href="#">
                     <img
                       src="assets/images/slide3.png"
-                      alt="배너-3">
+                      alt="banner-3">
                       
                     
                     </a>
                       </div>
                       </div>
-                      </div>
+                          <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+     
 
                     
                     <!-- benefit section -->
@@ -124,22 +128,22 @@
 
       <div class="process-card">
         <img src="assets/images/process1.png" alt="카드 발급">
-        <p>1. K-패스 카드 발급</p>
+       
       </div>
 
       <div class="process-card">
         <img src="assets/images/process2.png" alt="회원가입">
-        <p>2. K-패스 회원가입</p>
+    
       </div>
 
       <div class="process-card">
         <img src="assets/images/process3.png" alt="대중교통 이용">
-        <p>3. K-패스 카드로 대중교통 이용</p>
+      
       </div>
 
       <div class="process-card">
         <img src="assets/images/process4.png" alt="환급">
-        <p>4. 혜택 제공</p>
+       
       </div>
 
     </div>
@@ -149,7 +153,7 @@
 </section>
 
                       <!-- CARD -->
-<section class="card container">
+<section class="card">
 
 <h2>K-패스는 26개의 카드사에서 서비스 이용이 가능합니다.</h2>
 
@@ -176,9 +180,9 @@
 </div>
 
 </div>
-
-<button class="card-btn">K-패스 카드 비교하기</button>
-
+<div class="btn-wrap">
+<button class="card-btn">K-패스 카드 비교하기 </button>
+</div>
 </section>
 
 <!-- SUPPORT -->
@@ -186,6 +190,7 @@
 
   <div class="container support-inner">
 <div class="support-left">
+ 
 <div class="faq">
 
 <h3>자주 묻는 질문</h3>
@@ -196,11 +201,52 @@
 <li>제가 직접 일반형, 플러스형을 선택하면 되나요?</li>
 </ul>
 </div>
-
-<button>더보기</button>
+<div>
+<button class="more-btn">더보기</button>
 
 </div>
-<section id="notice" class="notice-section">
+<!-- 오른쪽 -->
+ <div class="support-right">
+  <h3>카드 이벤트</h3>
+  <div class="event-card">
+     <!-- Swiper -->
+            <div class=" event-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                      <a href="#">
+                    <img
+                      src="assets/images/event.png"
+                      alt="banner-1">
+                      
+                      
+                    </a>
+                    </div>
+                     <div class="swiper-slide">
+                      <a href="#">
+                    <img
+                      src="assets/images/event2.png"
+                      alt="banner-2">
+                      
+                      
+                    </a>
+                    </div>
+                     <div class="swiper-slide">
+                      <a href="#">
+                    <img
+                      src="assets/images/event3.png"
+                      alt="banner-3">
+                      
+                      
+                    </a>
+                    </div>
+
+  </div>
+ </div>
+  </div>
+</div>
+
+<div id="notice" class="notice-section">
+<div class="notice">
 
 <h3>공지사항</h3>
 
@@ -209,21 +255,14 @@
 <li>2026.02.07(토) 농협카드 서비스 점검 안내</li>
 <li>K패스 카카오 채널톡 상담 안내</li>
 </ul>
-
-<button>더보기</button>
-
+<div>
+<button class="more-btn">더보기</button>
 </div>
+</div>
+
+
  </section>
 
-
-
-<div class="event">
-
-<h3>카드 이벤트</h3>
-
-<img src="/assets/images/event.png" alt="카드 이벤트">
-
-</div>
 
 </section>
 

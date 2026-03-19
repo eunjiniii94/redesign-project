@@ -1,10 +1,39 @@
-const heroSwiper = new Swiper("hero swiper", {
-  spaceBetween: 30,
-  //   슬라이드와 슬라이드 사이 간격
+const heroSwiper = new Swiper(".hero-swiper", {
   loop: true,
   centeredSlides: true,
+
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const eventSwiper = new Swiper(".event-swiper", {
+  loop: true,
+  centeredSlides: true,
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
