@@ -26,8 +26,8 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
   color: #1a1a1a;
+  text-decoration: none;
 }
 img {
   border: 0;
@@ -64,23 +64,23 @@ header {
 .inner {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* 로고 왼쪽, 메뉴 오른쪽 */
   align-items: center;
+  justify-content: space-between; /* 로고 왼쪽, 메뉴 오른쪽 */
+  margin: 0 auto;
 }
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .menu-list {
   position: relative;
   display: flex;
+  gap: 113px;
   align-items: center;
   margin: 0;
   padding: 0;
-  gap: 113px;
   font-size: 20px;
   font-weight: 500;
   color: #000;
@@ -99,13 +99,14 @@ header {
   gap: 10px;
 }
 .user-buttons {
-  margin-left: 10px;
-  padding: 0 16px;
   display: flex;
   gap: 10px; /* 🔥 이거 추가 */
+  margin-left: 10px;
+  padding: 0 16px;
 }
 .btn {
   min-height: 40px;
+  gap: 8px;
 
   align-items: center;
   justify-content: center;
@@ -117,7 +118,6 @@ header {
   white-space: nowrap;
   cursor: pointer;
   border-radius: 100px;
-  gap: 8px;
 }
 
 .btn-primary {
@@ -141,15 +141,15 @@ header {
 }
 
 .benefit {
+  width: 100%;
   padding: 120px 0;
   text-align: center;
-  width: 100%;
 }
 
 .benefit-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-top: 120px;
 }
 
@@ -162,28 +162,28 @@ header {
 }
 
 .process {
-  padding: 80px 0;
   width: 100%;
+  padding: 80px 0;
   background-color: #e2efff;
 }
 
 .section-title {
-  text-align: center;
   margin-bottom: 140px;
   font-size: 28px;
+  text-align: center;
 }
 
 .process-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .process-card {
-  border-radius: 20px;
+  padding-bottom: 300px;
   overflow: hidden;
   text-align: center;
-  padding-bottom: 300px;
+  border-radius: 20px;
 }
 
 .process-card:nth-child(even) {
@@ -196,18 +196,23 @@ header {
 }
 
 .card {
-  padding: 100px 150px 100px 150px;
+  margin-top: 115px;
+  padding: 0 150px;
   background: #fff;
   text-align: center;
-  margin-top: 115px;
 }
 .card-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 70px;
+  justify-content: center;
 
   margin-top: 150px;
+  grid-template-columns: repeat(4, auto);
 }
 
+.card-item img {
+  max-width: 250px;
+}
 .card-item p {
   margin-top: 50px;
 }
@@ -215,20 +220,20 @@ header {
 .card-btn {
   width: 300px;
   height: 35px;
-  background-color: #002147cc;
-  color: #fff;
+  display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   padding: 5px 16px 5px;
   border: none;
+  background-color: #002147cc;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
   border-radius: 100px;
-  gap: 8px;
-  display: flex;
 }
 .card-btn::after {
   content: "→";
@@ -236,9 +241,9 @@ header {
 }
 
 .btn-wrap {
-  margin-top: 180px;
   display: flex;
   justify-content: flex-end; /* 🔥 오른쪽 끝으로 이동 */
+  margin-top: 180px;
 }
 .support {
   /* display: grid;
@@ -249,71 +254,171 @@ header {
 .support-inner {
   display: flex;
   gap: 40px;
-  align-items: flex-start;
 }
 
 .support-left {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
   flex: 1;
   text-align: center;
 }
-
-.faq ul,
+.support-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.faq,
 .notice {
+  display: flex;
+  flex-direction: column;
+}
+.faq ul,
+.notice ul {
   margin: 20px 0;
   list-style: none;
 }
-
+.faq h3,
+.notice h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #002147;
+  text-align: left;
+}
 .faq li,
 .notice li {
-  background: #ff7f50;
-  padding: 10px;
+  width: 60%;
   margin-bottom: 10px;
+  padding: 10px;
+  background: #ff7f50;
+  font-weight: 300;
   color: white;
   border-radius: 20px;
 }
+
+.support-left,
 .support-right {
-  width: 400px;
+  min-width: 0;
+  flex: 1;
+}
+.support-right h3 {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #002147;
 }
 .more-btn {
-  /* display: flex; */
+  width: 130px;
+  height: 35px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
   align-self: flex-end;
+  padding: 5px 16px 5px;
+  border: none;
+  background-color: #002147cc;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  /* white-space: nowrap; */
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.more-btn::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 5px;
+  transform: translateY(3px);
 }
 
 .event img {
-  width: 100%;
   border-radius: 20px;
 }
 
 .event-swiper {
   width: 100%;
-  aspect-ratio: 3/4;
+
+  margin: 0 auto;
+  overflow: hidden;
+  /* aspect-ratio: 3/4; */
+}
+
+.event-card {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.event-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
 .swiper-slide {
-  text-align: center;
-
   display: flex;
-  justify-content: flex-end;
+
   align-items: center;
 }
 
 .swiper-slide img {
-  display: flex;
   width: 100%;
   height: 100%;
-  object-fit: hidden;
+  display: flex;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .footer {
+  min-height: 300px;
+  padding: 80px 0;
   background: #233447;
   color: white;
-  padding: 40px 0;
 }
-
+.footer .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+}
 .footer-inner {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.footer-menu {
+  margin-bottom: 20px;
+}
+.footer .footer-menu li {
+  font-size: 16px;
+  font-weight: 300 !important;
+  line-height: 1 0.6;
+}
+
+.sns-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.sns-list img {
+  width: 60px;
+  height: 60px;
+}
+.footer-right {
+  margin-left: auto;
+  text-align: left;
+}
+.footer-logo img {
+  width: 100px;
+}
+.footer-bottom span {
+  font-weight: 300;
 }
