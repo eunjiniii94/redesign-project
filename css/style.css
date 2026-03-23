@@ -368,7 +368,7 @@ header {
   height: 100%;
   display: flex;
   object-fit: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .footer {
   min-height: 300px;
